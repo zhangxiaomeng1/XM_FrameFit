@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'XM_FrameFit_Example' do
+  pod 'XM_FrameFit', :path => '../'
+
+  target 'XM_FrameFit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
