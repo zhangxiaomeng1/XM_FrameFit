@@ -8,6 +8,8 @@
 
 #import "XMViewController.h"
 
+#import <XM_FrameFit/XM_DeviceFit.h>
+
 @interface XMViewController ()
 
 @end
@@ -18,6 +20,15 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    UIView *vc = [[UIView alloc] initWithFrame:CGRectMake(10, 100, 100, 100)];
+    vc.backgroundColor = [UIColor redColor];
+    [self.view addSubview:vc];
+    
+    
+    UIView *vc2 = [[UIView alloc] initWithFrame:CGRectMake(XM_KW(10), 250, XM_KW(100), XM_KH(100))];
+    vc2.backgroundColor = [UIColor yellowColor];
+    [self.view addSubview:vc2];
 }
 
 - (void)didReceiveMemoryWarning
